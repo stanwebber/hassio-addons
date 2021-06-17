@@ -2,8 +2,8 @@
   "name": "Pilight Server",
   "version": "1.7.2",
   "slug": "pilight",
-  "description": "Run a Pilight Server on your Home Assistant",
-  "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight",
+  "description": "Minimal Pilight Server compiled with acurite_606tx protocol",
+  "url": "https://github.com/stanwebber/hassio-addons/tree/main/pilight",
   "arch": ["armhf", "armv7"],
   "startup": "services",
   "boot": "auto",
@@ -13,10 +13,10 @@
   "apparmor": "false",
   "devices": ["/dev/mem:/dev/mem:rwm"],
   "options": {
-    "gpio_platform": "raspberrypi3",
+    "gpio_platform": "raspberrypi4",
     "hardware": {
-      "sender": 0,
-      "receiver": 1
+      "sender": 13,
+      "receiver": 9
     },
     "debug": false
   },
@@ -36,5 +36,5 @@
     "5000/tcp": "HTTP Port of the Pilight Server",
     "5001/tcp": "HTTP Port of the Pilight WebGui"
   },
-  "image":"philippluettecke/hassio-pilight-{arch}"
+  "image":"stanwebber/hassio-pilight-{arch}"
 }
