@@ -1,4 +1,4 @@
-ARG BUILD_FROM=homeassistant/armv7-base-debian:buster
+ARG BUILD_FROM=homeassistant/armhf-base-raspbian:buster
 FROM $BUILD_FROM
 
 # COPY qemu-arm-static /usr/bin
