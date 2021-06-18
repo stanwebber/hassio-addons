@@ -7,10 +7,14 @@ FROM $BUILD_FROM
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
  
 # Setup base system
-#RUN apt-get update \
-#    && apt-get install -y wget vim
+RUN apt-get update \
+    && apt-get install -y wget gnupg \
+    && echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \
+    && wget -O - http://apt.pilight.org/pilight.key | apt-key add -
 
 # Install dependencies
+RUN apt-get update \
+    && apt-get install -y libwiringx
 #RUN cd /tmp \
 #   && wget http://apt.pilight.org/pool/stable/main/l/libmbedx509-0/libmbedx509-0_2.6.0-1_armhf.deb \
 #   && wget http://apt.pilight.org/pool/stable/main/l/libmbedtls10/libmbedtls10_2.6.0-1_armhf.deb \
