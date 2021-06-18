@@ -14,7 +14,7 @@ RUN apt-get update \
 
 # Install dependencies
 RUN apt-get update \
-    && apt-get install -y libmbedtls-dev libwiringx
+    && apt-get install -y libmbedcrypto3 libmbedtls12 libmbedx509-0 libwiringx
 #RUN cd /tmp \
 #   && wget http://apt.pilight.org/pool/stable/main/l/libmbedx509-0/libmbedx509-0_2.6.0-1_armhf.deb \
 #   && wget http://apt.pilight.org/pool/stable/main/l/libmbedtls10/libmbedtls10_2.6.0-1_armhf.deb \
