@@ -35,6 +35,5 @@
   "ports_description": {
     "5000/tcp": "HTTP Port of the Pilight Server",
     "5001/tcp": "HTTP Port of the Pilight WebGui"
-  },
-  "image":"homeassistant/armhf-base-raspbian:buster"
+  }
 }
