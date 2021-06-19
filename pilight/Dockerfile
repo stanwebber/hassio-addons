@@ -1,4 +1,4 @@
-ARG BUILD_FROM=homeassistant/aarch64-base-debian:buster
+ARG BUILD_FROM=homeassistant/aarch64-base-debian:stretch
 FROM $BUILD_FROM
 
 # COPY qemu-arm-static /usr/bin
@@ -14,15 +14,10 @@ RUN apt-get update \
 
 # Install dependencies
     && apt-get update \
-    && apt-get install -y libmbedcrypto3 libmbedtls12 libmbedx509-0 liblua5.1-0 libwiringx
-#RUN cd /tmp \
-#   && wget http://apt.pilight.org/pool/stable/main/l/libmbedx509-0/libmbedx509-0_2.6.0-1_armhf.deb \
-#   && wget http://apt.pilight.org/pool/stable/main/l/libmbedtls10/libmbedtls10_2.6.0-1_armhf.deb \
-#   && wget http://apt.pilight.org/pool/stable/main/l/libmbedcrypto0/libmbedcrypto0_2.6.0-1_armhf.deb \
-#   && dpkg -i libmbed*.deb
+    && apt-get install -y libwiringx
 
 # Install Pilight
-COPY pilight-acurite-606tx_20210618-1_arm64.deb /tmp/pilight-acurite-606tx_20210618-1_arm64.deb
+COPY pilight-acurite-606tx_20210619-1_arm64.deb /tmp/pilight-acurite-606tx_20210619-1_arm64.deb
 RUN cd /tmp \
    && dpkg -i pilight-acurite-606tx*.deb \
    && rm -f pilight-acurite-606tx*.deb
