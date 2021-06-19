@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
  
 # Setup base system
 RUN apt-get update \
-    && apt-get install -y wget gnupg \
+    && apt-get install -y wget gnupg apt-transport-https \
     && echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \
     && wget -O - http://apt.pilight.org/pilight.key | apt-key add - \
 
