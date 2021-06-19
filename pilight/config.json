@@ -1,10 +1,10 @@
 {
   "name": "Pilight Server",
-  "version": "1.7.2",
+  "version": "8.0.2",
   "slug": "pilight",
   "description": "Minimal Pilight Server compiled with acurite_606tx protocol",
   "url": "https://github.com/stanwebber/hassio-addons/tree/main/pilight",
-  "arch": ["armhf", "armv7"],
+  "arch": ["aarch64"],
   "startup": "services",
   "boot": "auto",
   "privileged": ["SYS_RAWIO"],
