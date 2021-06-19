@@ -13,7 +13,7 @@ RUN apt-get update \
     && wget -O - http://apt.pilight.org/pilight.key | apt-key add - \
 # Install dependencies
     && apt-get update \
-    && apt-get install -y libwiringx
+    && apt-get install -y libunwind8 libwiringx
 
 # Install Pilight
 COPY pilight-acurite-606tx_20210618-1_arm64.deb /tmp/pilight-acurite-606tx_20210618-1_arm64.deb
