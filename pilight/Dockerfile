@@ -11,13 +11,12 @@ RUN apt-get update \
     && apt-get install -y wget gnupg apt-transport-https \
     && echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \
     && wget -O - http://apt.pilight.org/pilight.key | apt-key add - \
-
 # Install dependencies
     && apt-get update \
     && apt-get install -y libwiringx
 
 # Install Pilight
-COPY pilight-acurite-606tx_20210619-1_arm64.deb /tmp/pilight-acurite-606tx_20210619-1_arm64.deb
+COPY pilight-acurite-606tx_20210618-1_arm64.deb /tmp/pilight-acurite-606tx_20210618-1_arm64.deb
 RUN cd /tmp \
    && dpkg -i pilight-acurite-606tx*.deb \
    && rm -f pilight-acurite-606tx*.deb
