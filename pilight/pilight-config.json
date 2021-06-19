@@ -9,7 +9,6 @@
         "webserver-enable": 1,
         "webserver-root": "/usr/local/share/pilight/webgui",
         "webserver-http-port": 5001,
-        "webserver-https-port": 5002,
         "webserver-cache": 1,
         "gpio-platform": "raspberrypi4",
         "port": 5000
