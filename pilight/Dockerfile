@@ -16,10 +16,15 @@ RUN apt-get update \
     && apt-get install -y libunwind8 libwiringx
 
 # Install Pilight
-COPY pilight-acurite-606tx_20210618-1_arm64.deb /tmp/pilight-acurite-606tx_20210618-1_arm64.deb
+COPY pilight-acurite-606tx_8.0.2-1_*.deb /tmp/
 RUN cd /tmp \
-   && dpkg -i pilight-acurite-606tx*.deb \
-   && rm -f pilight-acurite-606tx*.deb
+   && if [ "$(uname -m)" = aarch64 ]; \
+   then \
+     dpkg -i pilight-acurite-606tx_8.0.2-1_arm64.deb; \
+   else \
+     dpkg -i pilight-acurite-606tx_8.0.2-1_armhf.deb; \
+   fi \
+   && rm -f pilight-acurite-606tx_8.0.2-1_*.deb
 
 # Copy the pilight Config into the Container
 COPY pilight-config.json /etc/pilight/config.json
