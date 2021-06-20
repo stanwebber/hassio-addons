@@ -32,16 +32,14 @@ https://github.com/stanwebber/hassio-addons
 ![Supports aarch64 Architecture][pilight-aarch64-shield]
 ![Supports amd64 Architecture][pilight-amd64-shield]
 ![Supports i386 Architecture][pilight-i386-shield]
-![Docker Pulls][pilight-pulls-shield]
 
 A Pilight Server Addon
 
 [:books: Pilight Server add-on documentation][addon-doc-pilight]
 
-[pilight-addon]: https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight
-[addon-doc-pilight]: https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight/README.md
-[pilight-version-shield]: https://img.shields.io/badge/version-v1.7.2-blue.svg
-[pilight-pulls-shield]: https://img.shields.io/docker/pulls/philippluettecke/hassio-pilight-armv7.svg
+[pilight-addon]: https://github.com/stanwebber/hassio-addons/tree/main/pilight
+[addon-doc-pilight]: https://github.com/stanwebber/hassio-addons/tree/main/pilight/README.md
+[pilight-version-shield]: https://img.shields.io/badge/version-v8.0.2-blue.svg
 [pilight-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [pilight-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg
 [pilight-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
