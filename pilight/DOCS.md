@@ -5,12 +5,12 @@
 Follow these steps to get the add-on installed on your system:
 
 1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.
-2. Add the following link to the repositories list found in the menu in the top right corner `http://www.github.com/philipp-luettecke/hassio-addons
+2. Add the following link to the repositories list found in the menu in the top right corner `http://www.github.com/stanwebber/hassio-addons
 `
 2. Find the "Pilight Server" add-on and click it.
 3. Click on the `INSTALL` button.
 
-#### **ATTENTION**: For now the Addon is only working on the Raspberry Pi with armhf architecture
+#### **ATTENTION**: For now the Addon is only working on the Raspberry Pi with armhf|armv7|aarch64 architecture
 
 ## How to use
 
