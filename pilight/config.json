@@ -4,7 +4,7 @@
   "slug": "pilight",
   "description": "Minimal Pilight Server compiled with acurite_606tx protocol",
   "url": "https://github.com/stanwebber/hassio-addons/tree/main/pilight",
-  "arch": ["aarch64"],
+  "arch": ["armhf", "armv7", "aarch64"],
   "startup": "services",
   "boot": "auto",
   "privileged": ["SYS_RAWIO"],
