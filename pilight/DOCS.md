@@ -10,7 +10,7 @@ Follow these steps to get the add-on installed on your system:
 2. Find the "Pilight Server" add-on and click it.
 3. Click on the `INSTALL` button.
 
-#### **ATTENTION**: For now the Addon is only working on the Raspberry Pi with armhf|armv7|aarch64 architecture
+#### **ATTENTION**: For now the Addon is only working on the Raspberry Pi with armhf | armv7 | aarch64 architecture
 
 ## How to use
 
