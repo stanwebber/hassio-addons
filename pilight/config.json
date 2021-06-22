@@ -9,9 +9,8 @@
   "boot": "auto",
   "privileged": ["SYS_RAWIO"],
   "webui": "http://[HOST]:[PORT:5001]",
-  "gpio": "true",
+  "full_access": "true",
   "apparmor": "false",
-  "devices": ["/dev/mem:/dev/mem:rwm"],
   "options": {
     "gpio_platform": "raspberrypi4",
     "hardware": {
