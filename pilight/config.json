@@ -9,8 +9,8 @@
   "boot": "auto",
   "privileged": ["SYS_RAWIO"],
   "webui": "http://[HOST]:[PORT:5001]",
-  "full_access": "true",
-  "apparmor": "false",
+  "full_access": true,
+  "apparmor": false,
   "options": {
     "gpio_platform": "raspberrypi4",
     "hardware": {
